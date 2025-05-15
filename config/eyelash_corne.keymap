@@ -57,6 +57,33 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        SFT3_to_F3: SFT3_to_F3 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "Morph SFT+3to F3";
+            bindings = <&kp NUMBER_3>, <&kp F3>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        SFT4_to_F4: SFT4_to_F4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "Morph SFT+4 to F4";
+            bindings = <&kp NUMBER_4>, <&kp F4>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        SFT5_to_F5: SFT5_to_F5 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "Morph SFT+5 to F5";
+            bindings = <&kp N5>, <&kp NUMBER_5>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -101,10 +128,10 @@
         lower_layer {
             display-name = "L1";
             bindings = <
-&trans  &SFT1_to_F1    &SFT2_to_F2  &trans    &trans     &trans                                       &mmv MOVE_UP                     &kp N6        &kp N7        &kp N8        &kp N9        &kp N0    &kp BSPC
-&trans  &trans         &kp HOME     &kp UP    &kp END    &kp LC(SLASH)                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp HOME  &kp PG_UP
-&trans  &kp BACKSPACE  &kp LEFT     &kp DOWN  &kp RIGHT  &kp DELETE     &kp C_MUTE                    &mmv MOVE_DOWN                   &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp END   &kp PG_DN
-                                    &trans    &trans     &trans                                                                        &kp INS       &kp DEL       &trans
+&trans  &SFT1_to_F1    &SFT2_to_F2  &SFT3_to_F3  &SFT4_to_F4  &SFT5_to_F5                                  &mmv MOVE_UP                     &kp N6        &kp N7        &kp N8        &kp N9        &kp N0    &kp BSPC
+&trans  &trans         &kp HOME     &kp UP       &kp END      &kp LC(SLASH)                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp HOME  &kp PG_UP
+&trans  &kp BACKSPACE  &kp LEFT     &kp DOWN     &kp RIGHT    &kp DELETE     &kp C_MUTE                    &mmv MOVE_DOWN                   &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp END   &kp PG_DN
+                                    &trans       &trans       &trans                                                                        &kp INS       &kp DEL       &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
