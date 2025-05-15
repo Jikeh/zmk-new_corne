@@ -26,6 +26,11 @@
     trigger-period-ms = <16>;
 };
 
+&mt {
+    flavor = "balanced";
+    retro-tap;
+};
+
 / {
     behaviors {
         td0: td0 {
@@ -33,6 +38,24 @@
             display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+        };
+
+        SFT1_to_F1: SFT1_to_F1 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "Morph SFT+1 to F1";
+            bindings = <&kp NUMBER_1>, <&kp F1>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        SFT2_to_F2: SFT2_to_F2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "Morph SFT+2 to F2";
+            bindings = <&kp NUMBER_2>, <&kp F2>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
     };
 
@@ -53,9 +76,10 @@
     combos {
         compatible = "zmk,combos";
 
-        Layer3 {
-            bindings = <&mo 3>;
-            key-positions = <43 46>;
+        Enter_L {
+            bindings = <&kp ENTER>;
+            key-positions = <15 16>;
+            layers = <1>;
         };
     };
 
@@ -71,16 +95,16 @@
                                      &kp LGUI  &mo 1  &mt LEFT_ALT SPACE                                               &kp SPACE  &mo 2  &mt RALT GRAVE
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         lower_layer {
             display-name = "L1";
             bindings = <
-&trans  &kp RC(BACKSPACE)  &kp HOME        &kp UP_ARROW   &kp END     &kp LC(DELETE)                                 &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&trans  &bt BT_CLR_ALL     &kp LEFT        &kp DOWN       &kp RIGHT   &kp LC(SLASH)                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans  &rgb_ug RGB_OFF    &rgb_ug RGB_ON  &kp BACKSPACE  &kp DELETE  &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                                           &trans         &trans      &trans                                                                          &kp INS          &kp DEL          &trans
+&trans  &SFT1_to_F1    &SFT2_to_F2  &trans    &trans     &trans                                       &mmv MOVE_UP                     &kp N6        &kp N7        &kp N8        &kp N9        &kp N0    &kp BSPC
+&trans  &trans         &kp HOME     &kp UP    &kp END    &kp LC(SLASH)                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp HOME  &kp PG_UP
+&trans  &kp BACKSPACE  &kp LEFT     &kp DOWN  &kp RIGHT  &kp DELETE     &kp C_MUTE                    &mmv MOVE_DOWN                   &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp END   &kp PG_DN
+                                    &trans    &trans     &trans                                                                        &kp INS       &kp DEL       &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -120,6 +144,15 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        L3 {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
