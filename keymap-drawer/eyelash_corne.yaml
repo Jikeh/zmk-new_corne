@@ -51,11 +51,11 @@ layers:
   - {t: '`', h: '$$mdi:apple-keyboard-option$$', s: '~'}
   L1:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
-  - HOME
-  - $$mdi:arrow-up-bold$$
-  - END
-  - Ctl+$$mdi:backspace-reverse-outline$$
+  - {t: '1', s: F1}
+  - {t: '2', s: F2}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
@@ -64,32 +64,32 @@ layers:
   - {t: '0', s: )}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
-  - BT CLR ALL
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - HOME
+  - $$mdi:arrow-up-bold$$
+  - END
   - {t: Ctl+/, s: 'Ctl+?'}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-right-bold$$
+  - '4'
+  - {t: '5', s: '%'}
+  - '6'
   - HOME
   - PG UP
   - {t: '$$mdi:transfer$$', type: trans}
-  - RGB OFF
-  - RGB ON
   - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
   - $$mdi:backspace-reverse-outline$$
-  - RGB EFF
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - RGB EFR
-  - RGB SPI
-  - RGB BRI
-  - RGB BRD
+  - '0'
+  - '1'
+  - '2'
+  - '3'
   - END
   - PG DN
   - {t: '$$mdi:transfer$$', type: trans}
@@ -246,5 +246,6 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [43, 46]
-  k: L3
+- p: [15, 16]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
+  l: [L1]
