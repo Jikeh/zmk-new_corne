@@ -6,7 +6,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
@@ -125,7 +124,7 @@
         lower_layer {
             display-name = "L1";
             bindings = <
-&trans  &SFT1_to_F1    &SFT2_to_F2  &SFT3_to_F3  &SFT4_to_F4  &SFT5_to_F5                                &mmv MOVE_UP                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &SFT1_to_F1    &SFT2_to_F2  &SFT3_to_F3  &SFT4_to_F4  &SFT5_to_F5                                &mmv MOVE_UP                     &trans  &trans  &trans  &trans  &trans  &kp DELETE
 &trans  &kp ENTER      &kp HOME     &kp UP       &kp END      &kp SLASH                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans  &kp PG_UP
 &trans  &kp BACKSPACE  &kp LEFT     &kp DOWN     &kp RIGHT    &kp DELETE   &kp C_MUTE                    &mmv MOVE_DOWN                   &trans  &trans  &trans  &trans  &trans  &kp PG_DN
                                     &trans       &trans       &trans                                                                      &trans  &trans  &trans
@@ -137,10 +136,10 @@
         raise_layer {
             display-name = "L2";
             bindings = <
-&trans  &kp EXCL      &kp AT          &kp HASH           &kp DLLR               &kp PRCNT                                  &mmv MOVE_UP                     &kp PLUS   &kp N7        &kp N8        &kp N9        &kp ASTERISK  &kp BSPC
-&trans  &bt BT_CLR    &kp UNDERSCORE  &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp LEFT_BRACE             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp EQUAL  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp BSLH      &kp GRAVE
-&trans  &out OUT_USB  &kp MINUS       &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &trans                    &mmv MOVE_DOWN                   &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PIPE      &kp TILDE
-                                      &trans             &trans                 &trans                                                                      &trans     &trans        &trans
+&trans  &kp EXCL           &kp AT          &kp HASH           &kp DLLR               &kp PRCNT                                  &mmv MOVE_UP                     &kp PLUS   &kp N7        &kp N8        &kp N9        &kp ASTERISK  &kp BSPC
+&trans  &kp DOUBLE_QUOTES  &kp UNDERSCORE  &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp LEFT_BRACE             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp EQUAL  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp BSLH      &kp GRAVE
+&trans  &kp SINGLE_QUOTE   &kp MINUS       &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &trans                    &mmv MOVE_DOWN                   &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp AMPS      &kp LCTRL
+                                           &trans             &trans                 &trans                                                                      &trans     &trans        &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
