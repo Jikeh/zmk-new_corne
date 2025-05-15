@@ -76,7 +76,7 @@
         SFT5_to_F5: SFT5_to_F5 {
             compatible = "zmk,behavior-mod-morph";
             label = "Morph SFT+5 to F5";
-            bindings = <&kp N5>, <&kp NUMBER_5>;
+            bindings = <&kp N5>, <&kp F5>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
