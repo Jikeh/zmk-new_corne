@@ -53,9 +53,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: F1}
   - {t: '2', s: F2}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '3', s: F3}
+  - {t: '4', s: F4}
+  - {t: '5', s: '5'}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
