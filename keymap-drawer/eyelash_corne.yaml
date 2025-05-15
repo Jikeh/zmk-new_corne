@@ -55,7 +55,7 @@ layers:
   - {t: '2', s: F2}
   - {t: '3', s: F3}
   - {t: '4', s: F4}
-  - {t: '5', s: '5'}
+  - {t: '5', s: F5}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
