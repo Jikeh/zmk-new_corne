@@ -184,9 +184,9 @@ layers:
   - '&mkp MB5'
   - MUTE
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:progress-download$$
+  - PLAY PAUSE
+  - $$mdi:skip-previous$$
+  - $$mdi:skip-next$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - SCROLLLOCK
   - PAUSE BREAK
