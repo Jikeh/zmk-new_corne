@@ -137,10 +137,10 @@
         lower_layer {
             display-name = "L1";
             bindings = <
-&trans          &SFT1_to_F1    &SFT2_to_F2  &SFT3_to_F3  &SFT4_to_F4  &SFT5_to_F5                                &mmv MOVE_UP                     &trans  &trans  &trans  &trans  &trans  &kp DELETE
-&kp LEFT_SHIFT  &kp ENTER      &kp HOME     &kp UP       &kp END      &kp SLASH                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans  &kp PG_UP
-&trans          &kp BACKSPACE  &kp LEFT     &kp DOWN     &kp RIGHT    &kp DELETE   &kp C_MUTE                    &mmv MOVE_DOWN                   &trans  &trans  &trans  &trans  &trans  &kp PG_DN
-                                            &trans       &trans       &trans                                                                      &trans  &trans  &trans
+&trans          &SFT1_to_F1    &SFT2_to_F2  &SFT3_to_F3  &SFT4_to_F4  &SFT5_to_F5                                &mmv MOVE_UP                     &trans  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans  &kp DELETE
+&kp LEFT_SHIFT  &kp ENTER      &kp HOME     &kp UP       &kp END      &kp SLASH                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &kp PG_UP
+&trans          &kp BACKSPACE  &kp LEFT     &kp DOWN     &kp RIGHT    &kp DELETE   &kp C_MUTE                    &mmv MOVE_DOWN                   &trans  &trans          &trans          &trans           &trans  &kp PG_DN
+                                            &trans       &trans       &trans                                                                      &trans  &trans          &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
