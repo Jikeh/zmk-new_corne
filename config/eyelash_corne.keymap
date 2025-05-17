@@ -109,8 +109,13 @@
         compatible = "zmk,combos";
 
         combo_RSFT {
-            bindings = <&none>;
+            bindings = <&kp RIGHT_SHIFT>;
             key-positions = <40 41>;
+        };
+
+        combo_LSFT {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <29 30>;
         };
     };
 
