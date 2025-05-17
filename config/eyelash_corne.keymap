@@ -108,7 +108,7 @@
     combos {
         compatible = "zmk,combos";
 
-        RSFT-comb {
+        combo_RSFT {
             bindings = <&none>;
             key-positions = <40 41>;
         };
