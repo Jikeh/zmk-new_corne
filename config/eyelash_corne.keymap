@@ -129,6 +129,16 @@
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <29 30>;
         };
+
+        combo_LeftArrow {
+            bindings = <&kp LEFT_ARROW>;
+            key-positions = <38 39>;
+        };
+
+        combo_RightArrow {
+            bindings = <&kp RIGHT_ARROW>;
+            key-positions = <40 39>;
+        };
     };
 
     keymap {
