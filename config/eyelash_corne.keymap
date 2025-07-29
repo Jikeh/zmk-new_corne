@@ -173,7 +173,7 @@
             bindings = <
 &trans  &kp EXCL           &kp AT          &kp HASH           &kp DLLR               &kp PRCNT                                  &mmv MOVE_UP                     &kp PLUS   &kp N7        &kp N8        &kp N9        &kp ASTERISK  &kp BSPC
 &trans  &kp DOUBLE_QUOTES  &kp UNDERSCORE  &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp LEFT_BRACE             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp EQUAL  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp BSLH      &kp GRAVE
-&trans  &kp SINGLE_QUOTE   &kp MINUS       &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &trans                    &mmv MOVE_DOWN                   &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp AMPS      &kp LCTRL
+&trans  &kp SINGLE_QUOTE   &kp MINUS       &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &trans                    &mmv MOVE_DOWN                   &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp AMPS      &kp CARET
                                            &trans             &trans                 &trans                                                                      &trans     &trans        &trans
             >;
 
