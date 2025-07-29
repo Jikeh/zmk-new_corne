@@ -140,7 +140,7 @@ layers:
   - '2'
   - '3'
   - '&'
-  - $$mdi:apple-keyboard-control$$
+  - ^
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
