@@ -254,3 +254,20 @@ combos:
   k: $$mdi:arrow-left-bold$$
 - p: [40, 39]
   k: $$mdi:arrow-right-bold$$
+- p: [4, 5]
+  k: Ctl+Sft+T
+- p: [15, 16]
+  k: Alt+Sft+$$mdi:arrow-up-bold$$
+  l: [L1]
+- p: [30, 31]
+  k: Sft+Alt+$$mdi:arrow-down-bold$$
+  l: [L1]
+- p: [17, 32]
+  k: '&macro_ParenthesisAndCenter'
+  l: [L2]
+- p: [16, 31]
+  k: '&macro_BracketsAndCenter'
+  l: [L2]
+- p: [18, 33]
+  k: '&macro_CurlBracketsAndCenter'
+  l: [L2]
