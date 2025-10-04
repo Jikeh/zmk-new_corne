@@ -139,6 +139,64 @@
             bindings = <&kp RIGHT_ARROW>;
             key-positions = <40 39>;
         };
+
+        combo_CtrlShiftT {
+            bindings = <&kp LC(LS(T))>;
+            key-positions = <4 5>;
+        };
+
+        combo_AltShiftUp {
+            bindings = <&kp LA(LS(UP))>;
+            key-positions = <15 16>;
+            layers = <1>;
+        };
+
+        combo_AltShiftDown {
+            bindings = <&kp LS(LA(DOWN))>;
+            key-positions = <30 31>;
+            layers = <1>;
+        };
+
+        ParenthesisAndCenterMacro {
+            bindings = <&macro_ParenthesisAndCenter>;
+            key-positions = <17 32>;
+            layers = <2>;
+        };
+
+        BracketsAndCenterMacro {
+            bindings = <&macro_BracketsAndCenter>;
+            key-positions = <16 31>;
+            layers = <2>;
+        };
+
+        CurlBracketsAndCenterMacro {
+            bindings = <&macro_CurlBracketsAndCenter>;
+            key-positions = <18 33>;
+            layers = <2>;
+        };
+    };
+
+    macros {
+        macro_ParenthesisAndCenter: macro_ParenthesisAndCenter {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
+            label = "MACRO_PARENTHESISANDCENTER";
+        };
+
+        macro_BracketsAndCenter: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
+            label = "NEW_MACRO";
+        };
+
+        macro_CurlBracketsAndCenter: macro_CurlBracketsAndCenter {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
+            label = "MACRO_CURLBRACKETSANDCENTER";
+        };
     };
 
     keymap {
