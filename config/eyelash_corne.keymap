@@ -174,6 +174,16 @@
             key-positions = <18 33>;
             layers = <2>;
         };
+
+        combo_TAB {
+            bindings = <&kp TAB>;
+            key-positions = <1 2>;
+        };
+
+        combo_LeftWin {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <42 43>;
+        };
     };
 
     macros {
@@ -205,10 +215,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&trans     &kp Q  &kp W  &kp E     &kp R  &kp T                                                     &kp UP                &kp Y      &kp U  &kp I      &kp O    &kp P                    &trans
-&trans     &kp A  &kp S  &kp D     &kp F  &kp G                                           &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &kp J  &kp K      &kp L    &semicolon_colon_switch  &trans
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B                             &kp K_MUTE              &kp DOWN              &kp N      &kp M  &kp COMMA  &kp DOT  &kp GRAVE                &kp SQT
-                         &kp LGUI  &mo 1  &alt_mt_hold_pref LEFT_ALT SPACE                                                &kp SPACE  &mo 2  &kp ENTER
+&trans     &kp Q  &kp W  &kp E                  &kp R  &kp T                                                     &kp UP                &kp Y      &kp U  &kp I      &kp O    &kp P                    &trans
+&trans     &kp A  &kp S  &kp D                  &kp F  &kp G                                           &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &kp J  &kp K      &kp L    &semicolon_colon_switch  &trans
+&kp LCTRL  &kp Z  &kp X  &kp C                  &kp V  &kp B                             &kp K_MUTE              &kp DOWN              &kp N      &kp M  &kp COMMA  &kp DOT  &kp GRAVE                &kp SQT
+                         &mt LEFT_SHIFT ESCAPE  &mo 1  &alt_mt_hold_pref LEFT_ALT SPACE                                                &kp SPACE  &mo 2  &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
