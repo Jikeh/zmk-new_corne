@@ -43,7 +43,7 @@ layers:
   - {t: ., s: '>'}
   - {t: '`', s: '~'}
   - {t: '''', s: '"'}
-  - LGUI
+  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-shift$$'}
   - L1
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-option$$'}
   - $$mdi:keyboard-space$$
@@ -271,3 +271,7 @@ combos:
 - p: [18, 33]
   k: '&macro_CurlBracketsAndCenter'
   l: [L2]
+- p: [1, 2]
+  k: $$mdi:keyboard-tab$$
+- p: [42, 43]
+  k: LEFT WIN
