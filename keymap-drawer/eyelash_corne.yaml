@@ -273,7 +273,9 @@ combos:
   l: [L2]
 - p: [1, 2]
   k: $$mdi:keyboard-tab$$
-  l: [QWERTY, L1, L2]
 - p: [42, 43]
   k: LEFT WIN
-  l: [QWERTY, L2, L1]
+- p: [23, 24]
+  k: {t: '$$mdi:backspace$$', type: backspace}
+- p: [24, 25]
+  k: $$mdi:backspace-reverse-outline$$
