@@ -248,8 +248,6 @@ layers:
 combos:
 - p: [40, 41]
   k: $$mdi:apple-keyboard-shift$$
-- p: [29, 30]
-  k: $$mdi:apple-keyboard-shift$$
 - p: [38, 39]
   k: $$mdi:arrow-left-bold$$
 - p: [40, 39]
@@ -273,7 +271,7 @@ combos:
   l: [L2]
 - p: [1, 2]
   k: $$mdi:keyboard-tab$$
-- p: [42, 43]
+- p: [29, 30]
   k: LEFT WIN
 - p: [23, 24]
   k: {t: '$$mdi:backspace$$', type: backspace}
