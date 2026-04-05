@@ -827,9 +827,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.9em">LEFT</tspan><tspan x="0" dy="1.2em">WIN</tspan>
+<tspan x="0" dy="-0.6em">LEFT</tspan><tspan x="0" dy="1.2em">WIN</tspan>
 </text>
-<text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(695, 209) rotate(-12.0)" class="key trans keypos-46">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -1466,16 +1465,6 @@ rect.held, rect.combo.held {
 <tspan x="280" dy="-0.6em">Ctl+</tspan><tspan x="280" dy="1.2em">Sft+T</tspan>
 </text>
 </g>
-<g class="combo combopos-5">
-<rect rx="6" ry="6" x="98" y="29" width="28" height="26" class="combo"/>
-<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="103" y="33" height="18" width="18.0" class="combo tap glyph mdi:keyboard-tab"/>
-</g>
-<g class="combo combopos-6">
-<rect rx="6" ry="6" x="241" y="193" width="28" height="26" class="combo"/>
-<text x="255" y="206" class="combo tap">
-<tspan x="255" dy="-0.6em">LEFT</tspan><tspan x="255" dy="1.2em">WIN</tspan>
-</text>
-</g>
 </g>
 </g>
 <g transform="translate(40, 1274)" class="layer-L5 temp">
@@ -1779,16 +1768,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="266" y="25" width="28" height="26" class="combo"/>
 <text x="280" y="38" class="combo tap">
 <tspan x="280" dy="-0.6em">Ctl+</tspan><tspan x="280" dy="1.2em">Sft+T</tspan>
-</text>
-</g>
-<g class="combo combopos-5">
-<rect rx="6" ry="6" x="98" y="29" width="28" height="26" class="combo"/>
-<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="103" y="33" height="18" width="18.0" class="combo tap glyph mdi:keyboard-tab"/>
-</g>
-<g class="combo combopos-6">
-<rect rx="6" ry="6" x="241" y="193" width="28" height="26" class="combo"/>
-<text x="255" y="206" class="combo tap">
-<tspan x="255" dy="-0.6em">LEFT</tspan><tspan x="255" dy="1.2em">WIN</tspan>
 </text>
 </g>
 </g>
