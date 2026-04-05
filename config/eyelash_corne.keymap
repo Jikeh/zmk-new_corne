@@ -178,13 +178,21 @@
         combo_TAB {
             bindings = <&kp TAB>;
             key-positions = <1 2>;
-            layers = <0 1 2>;
         };
 
         combo_LeftWin {
             bindings = <&kp LEFT_WIN>;
             key-positions = <42 43>;
-            layers = <0 2 1>;
+        };
+
+        combo_backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <23 24>;
+        };
+
+        combo_delete {
+            bindings = <&kp DELETE>;
+            key-positions = <24 25>;
         };
     };
 
