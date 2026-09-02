@@ -9,10 +9,10 @@ manifest:
   projects:
     - name: eyelash_corne
       url: https://github.com/a741725193/zmk-new_corne
-      revision: a7d93082b24f5b20e710a5db9b0e3141ade229b3
+      revision: 904bf0d97ab188412cd7e0d8644187ee9b67a03f
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3.0
+      revision: main
       import: app/west.yml
   self:
     path: config
