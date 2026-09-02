@@ -2,14 +2,21 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: cormoran
+      url-base: https://github.com/cormoran
+    - name: a741725193
+      url-base: https://github.com/a741725193
       # Additional modules containing boards/shields/custom code can be listed here as well.
       # See:
       # - https://zmk.dev/docs/features/modules
       # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
   projects:
-    - name: eyelash_corne
-      url: https://github.com/a741725193/zmk-new_corne
+    - name: zmk-new_corne
+      remote: a741725193
       revision: 904bf0d97ab188412cd7e0d8644187ee9b67a03f
+    - name: zmk-module-battery-history
+      remote: cormoran
+      revision: 307755dd2ad4d320e14de162e8e5ef018f29d929
     - name: zmk
       remote: zmkfirmware
       revision: main
