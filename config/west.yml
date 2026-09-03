@@ -17,6 +17,12 @@ manifest:
     - name: zmk-module-battery-history
       remote: cormoran
       revision: 307755dd2ad4d320e14de162e8e5ef018f29d929
+    - name: zmk-module-runtime-input-processor
+      remote: cormoran
+      revision: 43618985f8c9d5457cc333b7ca0733f2d361911e
+    - name: zmk-feature-custom-settings
+      remote: cormoran
+      revision: c6a7fef3a3be3d3ace5de9a4b0628c6418cd1f3f
     - name: zmk
       remote: zmkfirmware
       revision: main
